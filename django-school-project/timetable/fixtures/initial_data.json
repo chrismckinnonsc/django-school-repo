@@ -1,0 +1,216 @@
+[
+    {
+        "model": "timetable.PeriodSet",
+        "pk": 1,
+        "fields": {
+            "description": "Standard Mon, Tue, Thu, Fri"
+        }
+    },
+    {
+        "model": "timetable.PeriodSet",
+        "pk": 2,
+        "fields": {
+            "description": "Standard Wed"
+        }
+    },
+    {
+        "model": "timetable.Period",
+        "pk": 1,
+        "fields": {
+            "code": "1",
+            "name": "Mentor Group",
+            "start": "8:40",
+            "end": "8:55",
+            "periodset": 1
+        }
+    },
+    {
+        "model": "timetable.Period",
+        "pk": 2,
+        "fields": {
+            "code": "2",
+            "name": "Period 1",
+            "start": "8:55",
+            "end": "10:10",
+            "periodset": 1
+        }
+    },
+    {
+        "model": "timetable.Period",
+        "pk":3,
+        "fields": {
+            "code": "3",
+            "name": "Period 2",
+            "start": "10:35",
+            "end": "11:50",
+            "periodset": 1
+        }
+    },
+    {
+        "model": "timetable.Period",
+        "pk":4,
+        "fields": {
+            "code": "4",
+            "name": "Period 3",
+            "start": "11:55",
+            "end": "13:10",
+            "periodset": 1
+        }
+    },
+    {
+        "model": "timetable.Period",
+        "pk":5,
+        "fields": {
+            "code": "5",
+            "name": "Period 4",
+            "start": "14:00",
+            "end": "15:15",
+            "periodset": 1
+        }
+    },
+    {
+        "model": "timetable.Period",
+        "pk": 6,
+        "fields": {
+            "code": "2",
+            "name": "Period 1",
+            "start": "8:40",
+            "end": "9:50",
+            "periodset": 2
+        }
+    },
+    {
+        "model": "timetable.Period",
+        "pk":7,
+        "fields": {
+            "code": "3",
+            "name": "Period 2",
+            "start": "10:15",
+            "end": "11:25",
+            "periodset": 2
+        }
+    },
+    {
+        "model": "timetable.Period",
+        "pk":8,
+        "fields": {
+            "code": "4",
+            "name": "Period 3",
+            "start": "11:30",
+            "end": "12:40",
+            "periodset": 2
+        }
+    },
+    {
+        "model": "timetable.Period",
+        "pk":9,
+        "fields": {
+            "code": "5",
+            "name": "Period 4",
+            "start": "13:30",
+            "end": "15:15",
+            "periodset": 2
+        }
+    },
+    {
+        "model": "timetable.Day",
+        "pk":1,
+        "fields": {
+            "code": "1",
+            "day_of_week": 0,
+            "week": 1,
+            "periodset": 1
+        }
+    },
+    {
+        "model": "timetable.Day",
+        "pk":2,
+        "fields": {
+            "code": "2",
+            "day_of_week": 1,
+            "week": 1,
+            "periodset": 1
+        }
+    },
+    {
+        "model": "timetable.Day",
+        "pk":3,
+        "fields": {
+            "code": "3",
+            "day_of_week": 2,
+            "week": 1,
+            "periodset": 2
+        }
+    },
+    {
+        "model": "timetable.Day",
+        "pk":4,
+        "fields": {
+            "code": "4",
+            "day_of_week": 3,
+            "week": 1,
+            "periodset": 1
+        }
+    },
+    {
+        "model": "timetable.Day",
+        "pk":5,
+        "fields": {
+            "code": "5",
+            "day_of_week": 4,
+            "week": 1,
+            "periodset": 1
+        }
+    },
+    {
+        "model": "timetable.Day",
+        "pk":6,
+        "fields": {
+            "code": "6",
+            "day_of_week": 0,
+            "week": 2,
+            "periodset": 1
+        }
+    },
+    {
+        "model": "timetable.Day",
+        "pk":7,
+        "fields": {
+            "code": "7",
+            "day_of_week": 1,
+            "week": 2,
+            "periodset": 1
+        }
+    },
+    {
+        "model": "timetable.Day",
+        "pk":8,
+        "fields": {
+            "code": "8",
+            "day_of_week": 2,
+            "week": 2,
+            "periodset": 2
+        }
+    },
+    {
+        "model": "timetable.Day",
+        "pk":9,
+        "fields": {
+            "code": "9",
+            "day_of_week": 3,
+            "week": 2,
+            "periodset": 1
+        }
+    },
+    {
+        "model": "timetable.Day",
+        "pk":10,
+        "fields": {
+            "code": "10",
+            "day_of_week": 4,
+            "week": 2,
+            "periodset": 1
+        }
+    }
+
+]

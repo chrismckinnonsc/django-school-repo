@@ -1,0 +1,22 @@
+-Thoughts for including timetable/events-
+Day:
+	Date
+	Week
+	DayType
+	[PeriodTime]
+
+
+Week - A,B
+
+DayType - Standard, Wedensday, non-standard (e.g. assembly)
+	[Periods]
+
+Period - T,1,2,3,4,CC, Assembly?
+	code
+
+PeriodTime
+	Period
+	StartTime
+	EndTime
+
+Event - class, period, day

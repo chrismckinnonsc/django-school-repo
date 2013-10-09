@@ -1,0 +1,61 @@
+{% extends "admin/base_site.html" %}
+
+{% block title %}Sync Data{% endblock %}
+
+{% block content_title %}<h1>Sync Data</h1>{% endblock %}
+
+{% block content %}
+<div id="content-main">
+    <form action="/admin/sync/" method="post" enctype="multipart/form-data">{% csrf_token %}
+        {{ import_students_form }}
+        <input type="submit" value="Process" />
+    </form>
+
+    <form action="/admin/sync/" method="post" enctype="multipart/form-data">{% csrf_token %}
+        {{ import_staff_form }}
+        <input type="submit" value="Process" />
+    </form>
+
+    <form action="/admin/sync/" method="post" enctype="multipart/form-data">{% csrf_token %}
+        {{ import_enrolments_form }}
+        <input type="submit" value="Process" />
+    </form>
+
+    <form action="/admin/sync/" method="post">{% csrf_token %}
+        {{ generate_mds_file_form }}
+        <input type="submit" value="Generate MDS File" name="generate_mds"/>
+    </form>
+
+    <form action="/admin/sync/" method="post">{% csrf_token %}
+        {{ update_ad_groups_form }}
+        <input type="submit" value="Update AD Groups" name="update_ad_groups"/>
+    </form>
+
+    <form action="/admin/sync/" method="post">{% csrf_token %}
+        {{ update_aauthcate_form }}
+        <input type="submit" value="Update Authcate Fields" name="update_authcate"/>
+    </form>
+
+
+    <form action="/admin/sync/" method="post">{% csrf_token %}
+        {{ update_realsmart_form }}
+        <input type="submit" value="Update RealSmart" name="update_realsmart"/>
+    </form>
+
+    <form action="/admin/sync/" method="post">{% csrf_token %}
+        {{ update_google_groups_form }}
+        <input type="submit" value="Update Google Groups" name="update_google_groups"/>
+    </form>
+
+    <form action="/admin/sync/" method="post">{% csrf_token %}
+        {{ update_google_students_form }}
+        <input type="submit" value="Update Google Students" name="update_google_students"/>
+    </form>
+
+    <form action="/admin/sync/" method="get">{% csrf_token %}
+        {{ google_access_token_form }}
+        <input type="submit" value="Generate Google Access Token" name="generate_google_access_token"/>
+    </form>
+
+</div>
+{%  endblock %}
